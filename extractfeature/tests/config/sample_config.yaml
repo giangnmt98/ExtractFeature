@@ -1,0 +1,20 @@
+input_data_path: output_data_path/tests/data/sample_data.csv
+output_data_path: output_data_path/tests/data/sample_data_output.csv
+
+# List of fields/columns to be extracted from the CSV file
+fields:
+  - customer_id: int
+  - first_name: str
+  - last_name: str
+  - phone: str
+  - email: str
+  - city: str
+  - state: str
+
+# Filtering criteria for data extraction
+feature:
+  - HasPhone: bool
+  - EmailDomain: str
+  - FirstNameLength: int
+  - LastNameLength: int
+  - IsInNY: bool

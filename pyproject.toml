@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "extractfeature"
+version = "1.0"
+description = "Extract Feature Package"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "VNPTIC@DS", email = "vnptai@vnpt.vn" }
+]
+dependencies = [
+    # Add other dependencies from requirements.txt
+    "pandas==2.2.2",
+    "types-PyYAML==6.0.12.12",
+    "PyYAML==6.0",
+    "colorlog==6.8.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black==24.8.0",
+    "flake8==7.1.1",
+    "pylint==3.2.7",
+    "mypy==1.11.2",
+    "isort==5.13.2",
+    "types-PyYAML==6.0.12.12",
+    "pre-commit==3.4.0",
+    "pytest==7.4.2",
+    "colorlog==6.8.2"
+    # Add other dev dependencies here
+]
+
+[tool.setuptools]
+packages = ["extractfeature"]
