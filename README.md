@@ -52,11 +52,6 @@ make style
 ```bash
 python3 extractfeature/main.py --config_path <path_to_config_file>
 ````
-### Auto create virtual environment and run the feature extractor
-```bash
-chmod +x auto_run.sh
-./auto_run.sh --package_name extractfeature --config_path <path_to_config_file>
-````
 ## Project Directory Structure
 ```
 ExtractFeature/

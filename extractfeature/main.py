@@ -7,7 +7,7 @@ import pandas as pd
 
 from config import Config
 from extractor import FeatureExtractor
-from utils.customlogger import CustomLogger
+from utils.custom_logger import CustomLogger
 
 DEFAULT_CONFIG_PATH = "config.yaml"
 
