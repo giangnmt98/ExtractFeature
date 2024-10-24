@@ -3,25 +3,15 @@ Extracts features from CSV data based on a provided configuration.
 """
 
 import argparse
-import pandas as pd
 
+import pandas as pd
 from config import Config
 from extractor import FeatureExtractor
 from utils.custom_logger import CustomLogger
 
+logger = CustomLogger(name="Main").get_logger()
+
 DEFAULT_CONFIG_PATH = "config.yaml"
-
-
-def get_logger():
-    """
-    Initializes and returns a custom logger.
-    Returns:
-        logging.Logger: A logger instance specific to the feature extraction process.
-    """
-    return CustomLogger(name="Extract Feature").get_logger()
-
-
-logger = get_logger()
 
 
 def load_and_validate_config(config_path: str) -> Config:

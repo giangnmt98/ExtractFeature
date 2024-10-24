@@ -16,6 +16,7 @@ class TestFeatureExtractor(unittest.TestCase):
     Unit tests for the FeatureExtractor class,
      testing various feature extraction methods.
     """
+
     def setUp(self):
         """
         Set up the test case environment, initializing
