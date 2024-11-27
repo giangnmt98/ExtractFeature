@@ -5,9 +5,9 @@ Extracts features from CSV data based on a provided configuration.
 import argparse
 
 import pandas as pd
-from config import Config
-from extractor import FeatureExtractor
-from utils.custom_logger import CustomLogger
+from extractfeature.config import Config
+from extractfeature.extractor import FeatureExtractor
+from extractfeature.utils.custom_logger import CustomLogger
 
 logger = CustomLogger(name="Main").get_logger()
 
